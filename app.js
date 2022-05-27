@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors')
 const bodyParser = require("body-parser");
 const app = express();
 const {API_VERESION} = require("./config");
@@ -7,9 +8,10 @@ const userRoutes = require('./src/routes/user.routes')
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors())
 
 
-app.get('/back', (req, res)=>{
+app.get('/', (req, res)=>{
     res.json({message : 'conección exitosa con el back'})
 })
 

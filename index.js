@@ -11,6 +11,7 @@ mongoose.connect(
       throw err;
     } else {
       console.log("Succes conection to db");
+      
       app.listen(PORT_SERVER, () => {
         console.log("se esta escuchando el puerto", PORT_SERVER);
         console.log(`http://${IP_SERVER}:${PORT_SERVER}/api/${API_VERESION}/`);

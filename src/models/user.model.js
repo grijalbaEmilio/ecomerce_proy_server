@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
 const UserSchema = mongoose.Schema({
-  name: {
+  name_user: {
     type: String,
-    require: true,
-    min: 3,
+    /* require: true,
+    min: 3, */
   },
   lastname: {
     type: String,
-    require: true,
-    min: 3,
+    /* require: true,
+    min: 3, */
   },
   email: {
     type: String,
@@ -21,15 +21,15 @@ const UserSchema = mongoose.Schema({
   },
   active: {
     type: Boolean,
-    require: true,
+    /* require: true, */
   },
   role: {
     type: String,
-    require: true,
+    /* require: true, */
   },
   avatar: {
     type: String,
-    require: false,
+    /* require: false, */
   },
 });
 

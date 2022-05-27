@@ -10,7 +10,7 @@ const Model = require('../models/user.model')
 //console.log('function-->', UserController.signUp);
 api.post('/signup', UserController.signUp)
 
-api.get('/', UserController.getUser)
+api.get('/signin', UserController.signIn)
 
 module.exports = api
 
